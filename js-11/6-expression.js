@@ -1,3 +1,4 @@
+
 const person = {
   firstName: "Jake",
   lastName: "Gyllenhaal",
@@ -5,9 +6,30 @@ const person = {
   born: "california",
 };
 
-console.log(person.firstName);
-console.log(person["firstName"]);
-console.log(person["first" + "Name"]);
 
-let firstName = "firstName";
-console.log(person[firstName]);
+function name() {
+  return "firstName"
+}
+
+
+// console.log(person.firstName);
+// console.log(person["firstName"]);
+// console.log(person["first" + "Name"]);
+console.log(person[name()]);
+
+
+function getName() {
+  return "mahsa"
+}
+
+let name = getName()
+
+console.log(name);
+
+
+
+
+
+
+let arian = "firstName";
+console.log(person[arian]);

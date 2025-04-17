@@ -3,27 +3,14 @@ function sum(...nums) {
   return console.log(nums.reduce((acc, curr) => acc + curr));
 }
 
-sum(1, 2, 3, 4, 5, 6, 100);
+const numbers = [1, 2, 3, 4, 5, 6, 100];
 
-//$ ORDER MATTERS:
+sum(...numbers);
 
-function raceResults(gold, silver, ...others) {
-  console.log(`gold medal goes to: ${gold}`);
-  console.log(`silver medal goes to: ${silver}`);
-  console.log(`Thanks to: ${others}`);
+
+function min(...nums) {
+  // console.log(nums);
+
+  return Math.min(...nums);
 }
-// raceResults("Schumacher")
-// raceResults("Schumacher", "Hamilton")
-// raceResults("Schumacher", "Hamilton", "Vette", "Roseberg", "Button")
-
-// function raceResults2(...others) {
-//   console.log(`gold medal goes to: ${others[0]}`)
-//   console.log(`silver medal goes to: ${others[1]}`)
-//   console.log(`Thanks to: ${others}`)
-// }
-// raceResults2("Schumacher", "Hamilton", "Vette", "Roseberg", "Button")
-
-// function sum() {
-//   console.log(arguments)
-// }
-// sum([1,2,3,4])
+console.log(min(10, 0, -4, 20, 5000, 74, 86));

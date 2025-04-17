@@ -9,6 +9,7 @@ const myMath = {
     return num * num * num;
   },
 };
+
 // invoke , call
 console.log(myMath.square(2));
 

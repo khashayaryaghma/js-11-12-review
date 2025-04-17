@@ -2,12 +2,17 @@
 
 const scores = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
 
+const [first, second, sajjad, arian, ...rest] = scores;
+
+console.log(sajjad);
+console.log(rest);
+
 //$          Destructuring objects            */
 
 const user = {
   email: "zarif@gmail.com",
   password: "asgharTala007",
-  firstName: "MJ",
+  firstName: "",
   lastName: "Zarif",
   born: 1950,
   bio: "MJ Zarif supposed people to be Kharrrrr and pretend to release a none releasable dodgy charand",
@@ -15,10 +20,13 @@ const user = {
   akhor: "Iran",
 };
 
-// let fName = user.firstName
-// const lastName = user.lastName
-// let lName = user.firstName
+const password = user.password;
+const { password: pass, born, firstName = "tala", full = "asbkj" } = user;
 
+console.log(pass);
+console.log(firstName);
+console.log(full);
+console.log(user);
 //$           Destructuring params            ///
 
 ///$ EXAMPLE
@@ -111,30 +119,20 @@ const categories = [
   },
 ];
 
+const newArr = categories.filter(({ score_out_of_10 }) => score_out_of_10 >= 9);
+
+console.log(newArr);
+
 // console.log(categories.filter(category => category.score_out_of_10 >= 9))
 // console.log(categories.filter(({ score_out_of_10 }) => score_out_of_10 >= 9))
 
 // Rename destructured variables
 
-const profile = {
-  first: "Jane",
-  last: "Doe",
-  links: {
-    social: {
-      twitter: "https://twitter.com/janedoe",
-      facebook: "https://facebook.com/janedoe",
-    },
-    web: {
-      blog: "https://janedoe.com",
-    },
-  },
+const obj = {
+  newArrr: ["one", "two"],
 };
-const { twitter: tweet, facebook: fb } = profile.links.social;
 
-// Default value for destructured variables
+const { newArrr } = obj;
 
-const obj = { a: 1, b: 2 };
-
-const { a = "foo", b = "bar", c = "baz" } = obj;
-
-console.log(a, b, c); // 1 2 baz
+const [firstt] = newArrr;
+console.log(firstt);

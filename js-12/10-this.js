@@ -1,3 +1,4 @@
+
 const person = {
   firstName: 'Donald',
   lastName: 'Trump',
@@ -37,7 +38,7 @@ const person = {
   sayName() {
     setTimeout(() => {
       console.log(this);
-      console.log(this.fullName());
+      // console.log(this.fullName());
     }, 3000);
   },
 };
@@ -45,4 +46,4 @@ const person = {
 // console.log(person.fullName())
 // console.log(person.hisName())
 // console.log(person.shoutName());
-// console.log(person.sayName())
+person.sayName()

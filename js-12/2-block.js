@@ -22,11 +22,11 @@ console.log(msg);
 
 //var
 
-// for (var i = 0; i < 5; i++) {
-//   // BLOCK SCOPE
-//   let msg = "jasem is not a name, it is a culture.(benyamin(ع))";
-//   console.log(msg);
-// }
+for (var i = 0; i <= 2; i++) {
+  // BLOCK SCOPE
+  let msg = "jasem is not a name, it is a culture.(benyamin(ع))";
+  console.log(msg);
+}
 
 // // console.log('this is outside the block scope:' , msg)
-// console.log(i);
+console.log(i);

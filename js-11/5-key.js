@@ -4,7 +4,7 @@ const years = {
 };
 
 console.log(years["1999"]);
-console.log(years[1999]);
+console.log(years[2020]);
 
 const dumb = {
   true: "dat",
